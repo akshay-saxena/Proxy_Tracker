@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+
+        <item
+            android:id="@+id/scan_attendance_info"
+            android:icon="@drawable/icon"
+            android:title="Scan Attendance" />
+        <item
+            android:id="@+id/export_attendance"
+            android:icon="@drawable/icon"
+            android:title="Export/View Attendance" />
+
+        <item
+            android:id="@+id/view_update"
+            android:icon="@drawable/icon"
+            android:title="Update Attendance" />
+
+    </group>
+
+    <item android:title="Communicate">
+        <menu>
+            <item
+                android:id="@+id/nav_settings"
+                android:icon="@drawable/icon"
+                android:title="Settings" />
+            <item
+                android:id="@+id/nav_about"
+                android:icon="@drawable/ic_menu_send"
+                android:title="About" />
+        </menu>
+    </item>
+    <item
+        android:id="@+id/logout"
+        android:title="Log out"/>
+
+
+</menu>

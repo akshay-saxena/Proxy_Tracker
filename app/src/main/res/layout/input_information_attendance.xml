@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:fitsSystemWindows="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:paddingLeft="24dp"
+        android:paddingRight="24dp"
+        android:paddingTop="24dp">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="72dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="8dp"
+            android:src="@drawable/icon" />
+
+        <TextView android:id="@+id/link_signup"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="24dp"
+            android:text="Information"
+            android:gravity="center"
+            android:textSize="24sp"/>
+
+        <!--  Name Label -->
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:hint="Year"
+            android:layout_marginTop="8dp">
+
+            <android.support.v7.widget.AppCompatSpinner
+                android:id="@+id/branch_select"
+                android:layout_width="match_parent"
+                android:entries="@array/Branch_Name"
+                android:layout_height="48dp"
+                style="@style/Base.Widget.AppCompat.Spinner.Underlined"
+                android:hint="Year" />
+        </android.support.design.widget.TextInputLayout>
+
+        <!-- Year Label -->
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:hint="Branch"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:layout_marginTop="8dp">
+
+            <android.support.v7.widget.AppCompatSpinner
+                android:id="@+id/year_select"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                style="@style/Base.Widget.AppCompat.Spinner.Underlined"
+                android:entries="@array/Year_Name"
+                android:hint="Branch" />
+        </android.support.design.widget.TextInputLayout>
+
+        <!-- Password Label -->
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Semester"
+            android:layout_marginBottom="8dp"
+            android:layout_marginTop="8dp">
+
+            <android.support.v7.widget.AppCompatSpinner
+                android:id="@+id/semester_select"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                style="@style/Base.Widget.AppCompat.Spinner.Underlined"
+                android:entries="@array/Semester_Name"
+                android:hint="Semester"
+                android:inputType="textPassword" />
+        </android.support.design.widget.TextInputLayout>
+
+
+        <!-- Signup Button -->
+        <android.support.v7.widget.AppCompatButton
+            android:id="@+id/save_button"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="24dp"
+            android:layout_marginTop="24dp"
+            android:gravity="center"
+            android:padding="12dp"
+            android:text="Save" />
+
+        <!--  <TextView android:id="@+id/link_login"
+              android:layout_width="fill_parent"
+              android:layout_height="wrap_content"
+              android:layout_marginBottom="24dp"
+              android:text="Already a member? Login"
+              android:gravity="center"
+              android:textSize="16dip"/>
+  -->
+    </LinearLayout>
+</ScrollView>
