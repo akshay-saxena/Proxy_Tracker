@@ -69,6 +69,7 @@
     <string name="page_1">Page 1</string>
     <string name="page_2">Page 2</string>
     <string name="branch_select">Select Branch</string>
+    <string name="Year_select">Select Year</string>
     <string name="Semester">Semester</string>
 
     <string-array name="Branch_Name">
