@@ -5,14 +5,7 @@
     <item
         android:id="@+id/action_sync"
         android:orderInCategory="50"
-        app:showAsAction="ifRoom"
+        app:showAsAction="always"
         android:icon="@android:drawable/ic_menu_more"
         android:title="Sync"/>
-
-    <item
-        android:id="@+id/action_save"
-        android:orderInCategory="50"
-        app:showAsAction="always"
-        android:icon="@android:drawable/ic_menu_save"
-        android:title="save"/>
 </menu>

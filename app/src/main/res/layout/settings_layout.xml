@@ -104,16 +104,16 @@
                 android:inputType="textPassword"
                 android:prompt="@string/select_subject" />
 
-            <!-- Signup Button -->
-            <android.support.v7.widget.AppCompatButton
-                android:id="@+id/add_button"
-                android:visibility="gone"
-                android:layout_width="0dp"
-                android:layout_height="match_parent"
-                android:layout_weight="0.5"
-                android:gravity="center"
-                android:padding="12dp"
-                android:text="ADD" />
+            <!--&lt;!&ndash; Signup Button &ndash;&gt;-->
+            <!--<android.support.v7.widget.AppCompatButton-->
+                <!--android:id="@+id/add_button"-->
+                <!--android:visibility="gone"-->
+                <!--android:layout_width="0dp"-->
+                <!--android:layout_height="match_parent"-->
+                <!--android:layout_weight="0.5"-->
+                <!--android:gravity="center"-->
+                <!--android:padding="12dp"-->
+                <!--android:text="ADD" />-->
 
         </LinearLayout>
 

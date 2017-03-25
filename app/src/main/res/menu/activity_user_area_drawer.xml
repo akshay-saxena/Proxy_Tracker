@@ -10,12 +10,12 @@
         <item
             android:id="@+id/export_attendance"
             android:icon="@drawable/icon"
-            android:title="Export/View Attendance" />
+            android:title="Update Attendance" />
 
         <item
             android:id="@+id/view_update"
             android:icon="@drawable/icon"
-            android:title="Update Attendance" />
+            android:title="View Attendance" />
 
     </group>
 
