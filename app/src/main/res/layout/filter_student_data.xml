@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="8dp">
+
+    <android.support.v7.widget.AppCompatCheckBox
+        android:id="@+id/subject_checkbox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Subject"/>
+    <com.project.saxena.akshay.attendance_management.MultiSpinner
+        android:id="@+id/multiSpinner_subjects"
+        android:layout_width="match_parent"
+        android:visibility="gone"
+        android:layout_height="48dp"
+        ></com.project.saxena.akshay.attendance_management.MultiSpinner>
+        />
+    <android.support.v7.widget.AppCompatCheckBox
+        android:id="@+id/rollno_checkbox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Student RollNo"/>
+    <com.project.saxena.akshay.attendance_management.MultiSpinner
+        android:id="@+id/multiSpinner_rollno"
+        android:layout_width="match_parent"
+        android:visibility="gone"
+        android:layout_height="48dp"
+        ></com.project.saxena.akshay.attendance_management.MultiSpinner>
+    <LinearLayout
+        android:id="@+id/containerButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:orientation="horizontal"
+        android:padding="8dp"
+        android:visibility="visible"
+        android:weightSum="2">
+
+        <Button
+            android:id="@+id/okay_filter"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Apply"
+            android:textAllCaps="false" />
+
+        <Button
+            android:id="@+id/cancel_filter"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/cancel"
+            android:textAllCaps="false" />
+</LinearLayout>
+</LinearLayout>

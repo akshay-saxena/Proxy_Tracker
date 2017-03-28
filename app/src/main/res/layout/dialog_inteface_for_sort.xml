@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+   android:id="@+id/sorting_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:text="SORT BY "
+        android:textAlignment="center"
+        android:textSize="25dp"
+        android:textStyle="italic" />
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="2dip"
+        android:background="#000000" />
+
+    <RadioGroup
+        android:id="@+id/radioGroup_nouse"
+        style="@style/Widget.AppCompat.CompoundButton.RadioButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:orientation="vertical"
+        android:padding="8dp"
+        android:visibility="visible"
+        android:weightSum="4">
+
+        <RadioButton
+            android:id="@+id/Radio1_nouse"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="start"
+            android:layout_weight="1"
+            android:checked="false"
+            android:layoutDirection="rtl"
+            android:text="@string/Student_Name"
+            android:textAlignment="textStart" />
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="2dip"
+            android:background="@color/colorPrimary" />
+
+        <RadioButton
+            android:id="@+id/Radio2_nouse"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="start"
+            android:layout_weight="1"
+            android:checked="false"
+            android:layoutDirection="rtl"
+            android:text="@string/Year"
+            android:textAlignment="textStart" />
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="2dip"
+            android:background="@color/colorPrimary" />
+
+        <RadioButton
+            android:id="@+id/Radio3_nouse"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="start"
+            android:layout_weight="1"
+            android:checked="false"
+            android:layoutDirection="rtl"
+
+            android:text="@string/RollNo"
+            android:textAlignment="textStart" />
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="2dip"
+            android:background="@color/colorPrimary" />
+
+        <RadioButton
+            android:id="@+id/Radio4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="start"
+            android:layout_weight="1"
+            android:checked="false"
+            android:layoutDirection="rtl"
+            android:text="@string/Branch"
+            android:textAlignment="textStart" />
+    </RadioGroup>
+
+    <LinearLayout
+        android:id="@+id/containerButtonSortInterface_nouse"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal"
+        android:padding="8dp"
+        android:weightSum="2">
+
+        <Button
+            android:id="@+id/sort_interface_ok_button_nouse"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/zxing_button_ok"
+            android:textAllCaps="false" />
+
+        <Button
+            android:id="@+id/sort_interface_cancel_button"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/cancel"
+            android:textAllCaps="false" />
+    </LinearLayout>
+</LinearLayout>
+

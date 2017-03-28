@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:background="@color/common_action_bar_splitter">
+<LinearLayout
+    android:orientation="vertical"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp"
+    android:paddingTop="8dp"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:textStyle="italic"
+        android:text="Enter Search Details :"
+        android:textSize="25dp"
+        android:layout_marginBottom="16dp"
+        />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1.5">
+        <TextView
+            android:gravity="center_vertical"
+            style="@style/Base.TextAppearance.AppCompat.Medium"
+            android:text="Branch"
+            android:layout_weight="0.5"
+            android:layout_width="0dp"
+            android:layout_height="48dp" />
+   <!-- <android.support.v7.widget.AppCompatSpinner
+        android:layout_weight="1"
+        android:id="@+id/branch_select_for_search"
+        style="@style/Base.Widget.AppCompat.Spinner.Underlined"
+        android:layout_width="0dp"
+        android:layout_height="48dp"
+        android:spinnerMode="dialog"
+        android:entries="@array/Branch_Name"
+        android:hint="Branch"
+        android:prompt="@string/branch_select" />-->
+        <com.project.saxena.akshay.attendance_management.MultiSpinner
+            android:id="@+id/multiSpinner"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="48dp"
+           ></com.project.saxena.akshay.attendance_management.MultiSpinner>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="16dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1.5">
+        <TextView
+            style="@style/Base.TextAppearance.AppCompat.Medium"
+            android:text="Year"
+            android:layout_weight="0.5"
+            android:layout_width="0dp"
+            android:gravity="center_vertical"
+            android:layout_height="48dp" />
+    <android.support.v7.widget.AppCompatSpinner
+        android:id="@+id/year_select__for_search"
+        style="@style/Base.Widget.AppCompat.Spinner.Underlined"
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="48dp"
+        android:spinnerMode="dialog"
+        android:entries="@array/Year_Name"
+        android:hint="Year"
+        android:prompt="@string/Year_select" />
+        </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1.5">
+
+        <TextView
+            android:id="@+id/textView"
+            style="@style/Base.TextAppearance.AppCompat.Medium"
+            android:layout_width="0dp"
+            android:layout_height="48dp"
+            android:layout_weight="0.5"
+            android:gravity="center_vertical"
+            android:text="Subjects:" />
+
+        <android.support.v7.widget.AppCompatSpinner
+        android:id="@+id/subject_select_for_search"
+        style="@style/Base.Widget.AppCompat.Spinner.Underlined"
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="48dp"
+        android:spinnerMode="dialog"
+        android:hint="Select Subjects"
+        android:prompt="@string/select_subject" />
+        </LinearLayout>
+    <LinearLayout
+        android:layout_marginTop="16dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="1">
+
+        <Button
+            android:background="@color/colorPrimary"
+            android:id="@+id/etxt_fromdate"
+            style="@style/Base.Widget.AppCompat.EditText"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="12dp"
+            android:textAlignment="center"
+            android:layout_weight=".5"
+            android:textColor="@color/common_google_signin_btn_text_light"
+            android:text="From Date" />
+
+        <Button
+            style="@style/Base.Widget.AppCompat.EditText"
+            android:id="@+id/etxt_todate"
+            android:layout_width="0dp"
+            android:textAlignment="center"
+            android:textColor="@color/common_google_signin_btn_text_light"
+            android:background="@color/colorPrimary"
+            android:layout_height="wrap_content"
+            android:layout_weight=".5"
+            android:text="To Date" />
+    </LinearLayout>
+    <Button
+        android:id="@+id/search_Button"
+        android:layout_gravity="center"
+        android:layout_marginTop="8dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Search"/>
+</LinearLayout>
+</ScrollView>
