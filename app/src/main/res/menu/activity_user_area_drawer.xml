@@ -7,10 +7,10 @@
             android:id="@+id/scan_attendance_info"
             android:icon="@drawable/icon"
             android:title="Scan Attendance" />
-        <item
+       <!-- <item
             android:id="@+id/export_attendance"
             android:icon="@drawable/icon"
-            android:title="Update Attendance" />
+            android:title="Update Attendance" />-->
 
         <item
             android:id="@+id/view_update"

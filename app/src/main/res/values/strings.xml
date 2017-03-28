@@ -70,8 +70,13 @@
     <string name="page_2">Page 2</string>
     <string name="branch_select">Select Branch</string>
     <string name="Year_select">Select Year</string>
+    <string name="filter">Filter</string>
+    <string name="sort">Sort</string>
     <string name="Semester">Semester</string>
-
+    <string name="Student_Name">StudentName</string>
+    <string name="RollNo">StudentRollNo</string>
+    <string name="Branch">StudentBranch</string>
+    <string name="Year">StudentYear</string>
     <string-array name="Branch_Name">
         <item>EC</item>
         <item>CS</item>
@@ -105,6 +110,7 @@
     <string name="select_subject">Select Subjects</string>
     <string name="select_time">Select Time</string>
     <string name="Search_button">Search</string>
+    <string name="cancel">Cancel</string>
 
 </resources>
 
