@@ -5,7 +5,7 @@
 
         <item
             android:id="@+id/scan_attendance_info"
-            android:icon="@drawable/icon"
+            android:icon="@drawable/scanattendance"
             android:title="Scan Attendance" />
        <!-- <item
             android:id="@+id/export_attendance"
@@ -14,25 +14,26 @@
 
         <item
             android:id="@+id/view_update"
-            android:icon="@drawable/icon"
+            android:icon="@drawable/viewattendance"
             android:title="View Attendance" />
 
     </group>
 
-    <item android:title="Communicate">
+    <item android:title="General">
         <menu>
             <item
                 android:id="@+id/nav_settings"
-                android:icon="@drawable/icon"
+                android:icon="@drawable/settings"
                 android:title="Settings" />
             <item
                 android:id="@+id/nav_about"
-                android:icon="@drawable/ic_menu_send"
+                android:icon="@drawable/aboutus"
                 android:title="About" />
         </menu>
     </item>
     <item
         android:id="@+id/logout"
+        android:icon="@drawable/logout"
         android:title="Log out"/>
 
 

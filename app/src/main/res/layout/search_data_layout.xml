@@ -3,9 +3,9 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/common_action_bar_splitter"
+    android:clickable="true"
     android:orientation="vertical">
-    android:layout_width="match_parent"
-    android:layout_height="wrap_content">
+
     <ListView
         android:id="@+id/listViewSearch"
         android:layout_width="match_parent"
@@ -13,6 +13,16 @@
         android:background="@android:color/transparent"
         android:orientation="vertical"
         android:padding="8dp" />
+
+    <android.support.v7.widget.AppCompatTextView
+        android:id="@+id/no_data_found_textView"
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:clickable="false"
+        android:layout_centerInParent="true"
+        android:text="No Data Found. Please select different data."
+        android:gravity="center"/>
 
     <LinearLayout
         android:id="@+id/sorting_layout"

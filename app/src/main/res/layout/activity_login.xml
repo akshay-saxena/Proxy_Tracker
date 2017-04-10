@@ -3,6 +3,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
+    android:id="@+id/login_screen_main_layout"
     android:layout_height="match_parent"
     android:fitsSystemWindows="true"
     tools:context="com.project.saxena.akshay.attendance_management.activity.LoginActivity">
@@ -22,7 +23,7 @@
             android:layout_height="@dimen/logo_w_h"
             android:layout_gravity="center_horizontal"
             android:layout_marginBottom="20dp"
-            android:src="@mipmap/headerimage1" />
+            android:src="@drawable/proxycatcher" />
 
         <android.support.design.widget.TextInputLayout
             android:layout_width="match_parent"
@@ -55,12 +56,18 @@
         </android.support.design.widget.TextInputLayout>
 
         <!-- Login Button -->
+        <include
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            layout="@layout/progress_dialog"
+
+            />
 
         <Button
             android:id="@+id/loginbutton"
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="20dp"
+            android:layout_marginTop="15dp"
             android:background="@color/colorAccent"
             android:text="@string/btn_login"
             android:textColor="@android:color/black" />
@@ -69,7 +76,9 @@
             android:id="@+id/forgotbutton"
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="20dp"
+            android:gravity="right"
+            android:layout_marginTop="16dp"
+            android:layout_marginRight="8dp"
             android:background="@null"
             android:text="@string/btn_forgot_password"
             android:textColor="@color/colorAccent" />
@@ -78,17 +87,22 @@
         <Button
             android:id="@+id/registerbutton"
             android:layout_width="fill_parent"
+            android:layout_marginRight="8dp"
             android:layout_height="wrap_content"
-            android:layout_marginTop="20dp"
             android:background="@null"
             android:onClick="toRegisterActivity"
             android:text="@string/btn_link_to_register"
+            android:gravity="right"
             android:textColor="@color/white"
             android:textSize="15dp" />
         <com.google.android.gms.common.SignInButton
             android:id="@+id/sign_in_button"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content" />
+            android:layout_marginTop="10dp"
+            android:textAlignment="center"
+            android:background="@color/colorAccent"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            />
         <ProgressBar
             android:id="@+id/loginprogressBar"
             android:layout_width="30dp"

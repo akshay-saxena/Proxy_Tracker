@@ -18,7 +18,7 @@
         android:fadingEdge="horizontal"
         android:marqueeRepeatLimit="marquee_forever"
         android:scrollHorizontally="true"
-        android:textColor="#ff4500"
+        android:textColor="#000000"
         android:text="Simple application that shows how to use marquee, with a long text" />
 
     <android.support.design.widget.TabLayout

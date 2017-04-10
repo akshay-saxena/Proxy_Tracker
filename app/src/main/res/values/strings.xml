@@ -6,6 +6,7 @@
     <string name="prompt_password">Password</string>
     <string name="RegisterLabel">Proxy Catcher</string>
     <string name="action_sign_in">Register</string>
+    <string name="newuser">New User?</string>
     <string name="action_sign_in_short">Register</string>
     <string name="error_invalid_email">This email address is invalid</string>
     <string name="error_invalid_password">This password is too short</string>
@@ -34,7 +35,7 @@
     <string name="hint_password">Password</string>
     <string name="hint_name">Fullname</string>
     <string name="btn_login">LOGIN</string>
-    <string name="btn_link_to_register">Register Here!</string>
+    <string name="btn_link_to_register">Register Here !</string>
     <string name="btn_link_to_login">Already registered. Login Me!</string>
     <string name="title_activity_reset_password">ResetPasswordActivity</string>
     <string name="btn_forgot_password">Forgot Password?</string>
@@ -101,7 +102,7 @@
         <item>2nd Semester</item>
     </string-array>
     <string name="title_activity_parent_main">ParentMainActivity</string>
-
+    <string name="select_rollno">Enter Rollno</string>
     <string name="title_section1">Section 1</string>
     <string name="title_section2">Section 2</string>
     <string name="title_section3">Section 3</string>
@@ -112,6 +113,15 @@
     <string name="Search_button">Search</string>
     <string name="cancel">Cancel</string>
 
+
+    <string name="About_text">This App is mainly used to avoid Proxy during marking the attendance of students in different
+    lecturers.</string>
+    <string name="version_app">Version</string>
+    <string name="version_no">1.0.0</string>
+    <string name="Registered_id">Register Email Id</string>
+    <string name="Copyright">Copyright &#169; Saxena Industries, Inc </string>
+    <string name="Rights">All rights Reserverd</string>
+    <string name="Application">Proxy Catcher &#8482; is a not yet a registered trademark.</string>
 </resources>
 
 

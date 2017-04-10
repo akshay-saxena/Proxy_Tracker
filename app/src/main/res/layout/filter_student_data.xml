@@ -1,57 +1,105 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:padding="8dp">
+    android:padding="8dp"
+    android:background="@android:color/darker_gray">
 
-    <android.support.v7.widget.AppCompatCheckBox
-        android:id="@+id/subject_checkbox"
+    <LinearLayout
+        android:layout_marginTop="16dp"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Subject"/>
-    <com.project.saxena.akshay.attendance_management.MultiSpinner
-        android:id="@+id/multiSpinner_subjects"
+        android:id="@+id/subject_linearLayout"
+        android:gravity="center"
+        android:layout_margin="8dp"
+        android:weightSum="2"
+        android:orientation="vertical"
+        android:layout_height="wrap_content">
+
+        <android.support.v7.widget.AppCompatCheckBox
+            android:id="@+id/subject_checkbox"
+            android:layout_width="match_parent"
+            android:gravity="left|center_vertical"
+            android:layout_weight="1"
+            android:layout_height="24dp"
+            android:text="Subject"/>
+        <com.project.saxena.akshay.attendance_management.MultiSpinner
+            android:prompt="@string/select_subject"
+            android:id="@+id/multiSpinner_subjects"
+            android:layout_width="match_parent"
+            android:layout_weight="1"
+            android:visibility="gone"
+            android:layout_height="24dp"/>
+
+    </LinearLayout>
+
+
+    <LinearLayout
         android:layout_width="match_parent"
-        android:visibility="gone"
-        android:layout_height="48dp"
-        ></com.project.saxena.akshay.attendance_management.MultiSpinner>
-        />
-    <android.support.v7.widget.AppCompatCheckBox
-        android:id="@+id/rollno_checkbox"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Student RollNo"/>
-    <com.project.saxena.akshay.attendance_management.MultiSpinner
+        android:id="@+id/rollNumber_layout"
+        android:layout_margin="8dp"
+        android:layout_marginTop="16dp"
+        android:orientation="vertical"
+        android:layout_below="@id/subject_linearLayout"
+        android:layout_height="wrap_content">
+
+
+        <android.support.v7.widget.AppCompatCheckBox
+            android:id="@+id/rollno_checkbox"
+            android:layout_gravity="center"
+            android:gravity="left|center_vertical"
+            android:layout_width="match_parent"
+            android:layout_height="24dp"
+            android:text="Student RollNo"/>
+
+        <android.support.v7.widget.AppCompatEditText
+            android:id="@+id/editText_rolllno"
+            android:layout_marginTop="8dp"
+            android:layout_width="match_parent"
+            android:layout_gravity="left|center_vertical"
+            android:gravity="left|center_vertical"
+            android:layout_height="24dp"
+            android:background="@color/colorPrimary"
+            android:visibility="gone"
+            android:hint="@string/select_rollno"/>
+    </LinearLayout>
+
+
+    <!--<com.project.saxena.akshay.attendance_management.MultiSpinner
+        android:prompt="@string/select_rollno"
         android:id="@+id/multiSpinner_rollno"
         android:layout_width="match_parent"
         android:visibility="gone"
         android:layout_height="48dp"
-        ></com.project.saxena.akshay.attendance_management.MultiSpinner>
+        ></com.project.saxena.akshay.attendance_management.MultiSpinner>-->
     <LinearLayout
+        android:layout_below="@+id/rollNumber_layout"
+        android:layout_marginTop="24dp"
         android:id="@+id/containerButton"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-
         android:orientation="horizontal"
-        android:padding="8dp"
         android:visibility="visible"
         android:weightSum="2">
 
-        <Button
+        <android.support.v7.widget.AppCompatButton
             android:id="@+id/okay_filter"
+            android:gravity="center"
+            android:layout_gravity="center_vertical"
             android:layout_width="0dp"
-            android:layout_height="wrap_content"
+            android:layout_height="match_parent"
             android:layout_weight="1"
             android:text="Apply"
             android:textAllCaps="false" />
 
-        <Button
+        <android.support.v7.widget.AppCompatButton
             android:id="@+id/cancel_filter"
+            android:gravity="center"
+            android:layout_gravity="center_vertical"
             android:layout_width="0dp"
-            android:layout_height="wrap_content"
+            android:layout_height="match_parent"
             android:layout_weight="1"
             android:text="@string/cancel"
             android:textAllCaps="false" />
 </LinearLayout>
-</LinearLayout>
+</RelativeLayout>

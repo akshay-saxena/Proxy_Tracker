@@ -8,6 +8,13 @@
     android:fitsSystemWindows="true"
     tools:openDrawer="start">
 
+    <!--progress dialog for loading purpose-->
+
+    <include layout="@layout/progress_dialog"/>
+
+    <!--progress dialog for loading purpose-->
+
+
     <include
         layout="@layout/app_bar_user_area"
         android:layout_width="match_parent"

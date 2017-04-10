@@ -21,17 +21,14 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_alignParentTop="true"
-
                 android:orientation="vertical"
-                android:paddingBottom="@dimen/activity_horizontal_margin"
-                android:paddingLeft="@dimen/activity_horizontal_margin"
-                android:paddingRight="@dimen/activity_horizontal_margin">
+                android:padding="@dimen/activity_horizontal_margin">
 
                 <ImageView
                     android:layout_width="@dimen/logo_w_h"
                     android:layout_height="@dimen/logo_w_h"
                     android:layout_gravity="center_horizontal"
-                    android:src="@mipmap/headerimage1" />
+                    android:src="@drawable/proxycatcher" />
 
                 <android.support.design.widget.TextInputLayout
                     android:layout_width="match_parent"
@@ -85,7 +82,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="20dp"
-                    android:background="@color/colorAccent"
+                    android:background="@drawable/buttonproperty"
                     android:text="@string/action_sign_in_short"
                     android:textColor="#000000" />
 
